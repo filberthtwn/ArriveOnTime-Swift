@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_telephone.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

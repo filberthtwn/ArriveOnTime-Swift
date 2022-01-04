@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FutureViewController" customModule="aotdelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyStateL" destination="r8V-XV-gUx" id="Cg0-VF-VsC"/>
+                <outlet property="futureTV" destination="9do-Td-LX2" id="aaP-w9-h1Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9do-Td-LX2">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bpV-Qt-KbU"/>
+                        <outlet property="delegate" destination="-1" id="swZ-a0-Xka"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No order to display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-XV-gUx">
+                    <rect key="frame" x="145.5" y="444.5" width="123" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="PrimaryTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="PrimaryBgColor"/>
+            <constraints>
+                <constraint firstItem="9do-Td-LX2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jkf-nP-849"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9do-Td-LX2" secondAttribute="trailing" id="Q8N-cn-8vS"/>
+                <constraint firstItem="9do-Td-LX2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bGc-HJ-Hg8"/>
+                <constraint firstItem="r8V-XV-gUx" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ppo-sx-Vpb"/>
+                <constraint firstItem="r8V-XV-gUx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wBj-90-shf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9do-Td-LX2" secondAttribute="bottom" id="zhu-kk-1ow"/>
+            </constraints>
+            <point key="canvasLocation" x="-277" y="32"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryBgColor">
+            <color red="0.9570000171661377" green="0.96899998188018799" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.33300000429153442" green="0.33300000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

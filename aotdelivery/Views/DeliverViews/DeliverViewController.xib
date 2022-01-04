@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeliverViewController" customModule="aotdelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="deliverTV" destination="nLR-y1-TsF" id="eFK-lo-oHV"/>
+                <outlet property="emptyStateL" destination="Yc4-nt-BUw" id="4PX-t2-m86"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-y1-TsF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TYN-Va-ADO"/>
+                        <outlet property="delegate" destination="-1" id="fxe-qE-Ldr"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No order to display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc4-nt-BUw">
+                    <rect key="frame" x="145.5" y="444.5" width="123" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="PrimaryTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="PrimaryBgColor"/>
+            <constraints>
+                <constraint firstItem="nLR-y1-TsF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="EcC-r7-tA8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nLR-y1-TsF" secondAttribute="bottom" id="X9P-wb-CfL"/>
+                <constraint firstItem="Yc4-nt-BUw" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="XpJ-IF-4de"/>
+                <constraint firstItem="nLR-y1-TsF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cQb-hN-zbc"/>
+                <constraint firstItem="nLR-y1-TsF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lPa-i5-7oD"/>
+                <constraint firstItem="Yc4-nt-BUw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oOU-CL-VSH"/>
+            </constraints>
+            <point key="canvasLocation" x="-17.39130434782609" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryBgColor">
+            <color red="0.9570000171661377" green="0.96899998188018799" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.33300000429153442" green="0.33300000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
